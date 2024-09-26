@@ -1,0 +1,119 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*Navigace*/
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+    width: 115px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid grey;
+}
+
+
+
+
+nav {
+    background: rgb(0, 0, 0, 0.8);
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    width: 1020px;
+    margin: 0px auto;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Main*/
+.firstPhoto {
+    background: black;
+}
+
+
+
+.firstPhoto img {
+    display: block;
+    margin: 0px auto;
+    width: 500px;
+    position: relative;
+    top: 0px
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main h2 span {
+    font-size: 40px;
+}
+
+.section1 img {
+    width: 500px;
+    margin: 0px auto;
+    display: block;
+}
+
+.section2 h2 {
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.section3 img {
+    width: 500px;
+    display: block;
+    margin: 0px auto;
+}
+
+.section4 h2 {
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+
+
+/*Patička*/
+footer {
+    background: #f5f5f7;
+    color: #868668;
+    text-align: center;
+}
+
+
+
+p {
+    text-align: center;
+    font-size: 40px;
+}
+
+.secondPhoto img {
+    width: 500px;
+    
+}
+
+
