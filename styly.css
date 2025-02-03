@@ -1,80 +1,106 @@
 body {
-    margin: 0%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     background-color: black;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
 }
 
 .container {
-    font-size: 10px;
-    width: 40em;
-    height: 40em;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sun {
-    position: absolute;
-    top: 15em;
-    left: 15em;
-    width: 10em;
-    height: 10em;
-    background-color: #ffea00;
+    display: flex;
+    background-color: yellow;
     border-radius: 50%;
-    box-shadow: 0 0 10em #fff;
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 15.6s linear infinite;
+    box-shadow: 0 0 50px yellow;
 }
 
-.earth, .moon {
-    position: absolute;
-    border-style: solid;
-    border-color: #5b76ee transparent transparent transparent;
-    border-width: 0.1em 0.1em 0 0;
+@keyframes rotate {
+0%  {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(-360deg);
+}
+}
+
+.zeme {
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-}
-
-.earth {
-    top: 5em;
-    left: 5em;
-    width: 30em;
-    height: 30em;
-    animation: orbit 25.5s linear infinite;
-}
-
-.moon {
-    top: 0;
-    right: 0;
-    width: 8em;
-    height: 8em;
-    animation: orbit 2.7s linear infinite;
-}
-
-.earth::before,
-.moon::before {
-    content:  '';
+    box-shadow: 0 0 50px #2a85c8;
+    background-color: #2a85c8;
+    border: 2px solid green;
+    animation: rotate 17.6s linear infinite;
+    display: flex;
     position: absolute;
+    top: 200%;
+}
+
+.mesic {
+    background-color: #a9a9a9;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
+    top: 110%;
+    display: flex;
+    position: absolute;
+    box-shadow: 0 0 35px #a9a9a9;
 }
 
-.earth::before {
-    top: 2.8em;
-    right: 2.8em;
-    width: 3em;
-    height: 3em;
-    background-color: #13f1f1;
+.secret-merkur {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    animation: rotate 8.5s linear infinite;
 }
 
-.moon::before {
-    top: 0.8em;
-    right: 0.2em;
-    width: 1.2em;
-    height: 1.2em;
-    background-color: #c0c0c0;
+.merkur {
+    background-color: #908d8b;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    top: 170%;
 }
 
-@keyframes orbit {
-    100%{
-        transform: rotate(360deg);
-    }
+.secret-jupiter {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    animation: rotate 25.3s linear infinite;
+}
+
+.jupiter {
+    background-color: #d9a066;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    top: 360%;
+}
+
+.sun-animation {
+    background-color: yellow;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    animation: rotate 15.6s linear infinite;
 }
