@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
+    <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
+    <div class="Calculator">
+        <div class="screen" id="screen">
         </div>
-
+        <div class="buttons">
+            <button onclick="clearScreen()">AC</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="appendCharacter('%')">%</button>
+            <button onclick="appendCharacter('/')">/</button>
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button onclick="appendCharacter('*')">X</button>
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+            <button onclick="appendCharacter('-')">-</button>
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button onclick="appendCharacter('+')">+</button>
+            <button onclick="appendCharacter('0')">0</button>
+            <button onclick="appendCharacter('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
