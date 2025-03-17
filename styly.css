@@ -1,80 +1,568 @@
-body {
-    margin: 0%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-color: black;
+
+/* index.html */
+
+body, html {
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    font-size: 10px;
-    width: 40em;
-    height: 40em;
+header {
+    background-image: url('obrazek/netflix.logo.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
     position: relative;
 }
 
-.sun {
+header .overlay {
     position: absolute;
-    top: 15em;
-    left: 15em;
-    width: 10em;
-    height: 10em;
-    background-color: #ffea00;
-    border-radius: 50%;
-    box-shadow: 0 0 10em #fff;
-}
-
-.earth, .moon {
-    position: absolute;
-    border-style: solid;
-    border-color: #5b76ee transparent transparent transparent;
-    border-width: 0.1em 0.1em 0 0;
-    border-radius: 50%;
-}
-
-.earth {
-    top: 5em;
-    left: 5em;
-    width: 30em;
-    height: 30em;
-    animation: orbit 25.5s linear infinite;
-}
-
-.moon {
     top: 0;
-    right: 0;
-    width: 8em;
-    height: 8em;
-    animation: orbit 2.7s linear infinite;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.earth::before,
-.moon::before {
-    content:  '';
+.logo img {
+    width: 150px; 
+    height: auto;
     position: absolute;
-    border-radius: 50%;
+    top: 20px; 
+    left: 150px; 
 }
 
-.earth::before {
-    top: 2.8em;
-    right: 2.8em;
-    width: 3em;
-    height: 3em;
-    background-color: #13f1f1;
+.text {
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold; 
+    font-size: 65px; 
+    color: white;
 }
 
-.moon::before {
-    top: 0.8em;
-    right: 0.2em;
-    width: 1.2em;
-    height: 1.2em;
-    background-color: #c0c0c0;
+.cena {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    top: 65%;
+    left: 50%;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-@keyframes orbit {
-    100%{
-        transform: rotate(360deg);
-    }
+.divat {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    top: 72%;
+    left: 50%;
+    font-size: 20px;
 }
+
+.jazyk select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.jazyk {
+    position: absolute;
+    top: 4%;
+    left: 75%;
+}
+
+.prihlasit {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #e50914; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    top: 4%;
+    left: 83%;
+    position: absolute;
+}
+
+.email {
+    text-align: center;
+    margin-top: 20px;
+    top: 78%;
+    left: 34%;
+    position: absolute;
+}
+
+.email-input {
+    padding: 15px 45px;
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 300px; 
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: transparent;
+    color: #fff;
+}
+
+.email-input::placeholder {
+    color: white;
+}
+
+.zacit {
+    padding: 18px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e50914; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    top: 80.5%;
+    left: 61%;
+    position: absolute;
+}
+
+h3 {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 100%;
+    position: absolute;
+}
+
+.duvody {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 170%;
+    position: absolute;
+}
+
+.olihen img { 
+    width: 300px;  
+    height: auto;
+    position: absolute;
+    top: 115%;
+    left: 6%;
+    border-radius: 10px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.zapisnik img {
+    width: 270px;  
+    height: auto;
+    position: absolute;
+    top: 115%;
+    left: 31%;
+    border-radius: 10px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.action img {
+    width: 260px;  
+    height: auto;
+    position: absolute;
+    top: 115%;
+    left: 54%;
+    border-radius: 10px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.kitty img {
+    width: 260px;  
+    height: auto;
+    position: absolute;
+    top: 115%;
+    left: 76%;
+    border-radius: 10px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.duvod1 {
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 300px; 
+    height: auto;
+    position: absolute;
+    color: #fff;
+    top: 185%;
+    left: 2%;
+    background: linear-gradient(to right, #1a1a6b, #330066);
+    padding: 20px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 9.2%;
+}
+
+.duvod1 h4 {
+    font-size: 25px;
+    white-space: nowrap;
+    margin-bottom: 10px; 
+}
+
+h4 {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.tv {
+    position: relative;
+    top: 50%;
+    color: lightgrey;
+}
+
+.duvod2 {
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 300px; 
+    height: auto;
+    position: absolute;
+    color: #fff;
+    top: 185%;
+    left: 26.3%;
+    background: linear-gradient(to right, #1a1a6b, #330066);
+    padding: 20px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8.5%;
+}
+
+.duvod2 h4 {
+    font-size: 25px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.install {
+    position: relative;
+    top: 50%;
+    color: lightgrey;
+}
+
+.duvod3 {
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    color: #fff;
+    top: 185%;
+    left: 50.7%;
+    background: linear-gradient(to right, #1a1a6b, #330066);
+    padding: 20px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 9.2%;
+}
+
+.duvod3 h4 {
+    font-size: 25px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.stream {
+    position: relative;
+    top: 50%;
+    color: lightgrey;
+}
+
+.duvod4 {
+    border: 2px solid black;
+    border-radius: 5%;
+    width: 300px; 
+    height: auto;
+    position: absolute;
+    color: #fff;
+    top: 185%;
+    left: 75%;
+    background: linear-gradient(to right, #1a1a6b, #330066);
+    padding: 20px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 9.2%;
+}
+
+.duvod4 h4 {
+    font-size: 25px;
+    white-space: nowrap;
+    margin-bottom: 10px; 
+}
+
+.profil {
+    position: relative;
+    top: 50%;
+    color: lightgrey;
+}
+
+.tv1 img {
+    position: absolute;
+    width: 330px;
+    height: auto;
+    top: 205%;
+    left: 2%;
+}
+
+.offline img {
+    position: absolute;
+    width: 330px;
+    height: auto;
+    top: 205%;
+    left: 26.5%;
+}
+
+.lupa img {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top: 206%;
+    left: 50.3%;
+}
+
+.face img {
+    position: absolute;
+    width: 257.5px;
+    height: auto;
+    top: 209%;
+    left: 78%;
+}
+
+.olihen img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    transition-timing-function: ease-out;
+}
+
+.zapisnik img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    transition-timing-function: ease-out;
+}
+
+.action img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    transition-timing-function: ease-out;
+}
+
+.kitty img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    transition-timing-function: ease-out;
+}
+
+.nadpis1 {
+    color: #fff;
+    position: absolute;
+    top: 235%;
+    left: 20%;
+    font-size: 25px;
+}
+
+.kontakty {
+    color: lightgray;
+    position: absolute;
+    top: 243%;
+    left: 20%;
+}
+
+.nadpis2 {
+    color: #fff;
+    position: absolute;
+    top: 235%;
+    left: 71%;
+    font-size: 25px;
+}
+
+.adresa {
+    color: lightgray;
+    position: absolute;
+    top: 243%;
+    left: 71%;
+}
+
+main {
+    background-color: black; 
+    padding: 50px;
+    min-height: 160vh;
+}
+
+footer {
+    background-color: black; 
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Přihlášení */
+
+.under {
+    background-color: black; 
+    padding: 50px;
+    min-height: 35vh;
+}
+
+.form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 4px;
+    padding: 70px;
+    width: 450px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+}
+  
+.form-wrapper h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.form-wrapper form {
+    margin: 25px 0 65px;
+}
+  
+form .form-control {
+    height: 50px;
+    position: relative;
+    margin-bottom: 16px;
+}
+  
+.form-control input {
+    height: 100%;
+    width: 100%;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+  
+.form-control input:is(:focus, :valid) {
+    background: #444;
+    padding: 16px 20px 0;
+}
+  
+.form-control label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+  
+.form-control input:is(:focus, :valid) ~ label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+  
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    background: #e50914;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin: 25px 0 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+  
+form button:hover {
+    background: #c40812;
+}
+  
+.form-wrapper a {
+    text-decoration: none;
+}
+  
+.form-wrapper a:hover {
+    text-decoration: underline;
+}
+  
+.form-wrapper :where(label, p, small, a) {
+    color: #b3b3b3;
+}
+  
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+  
+form .remember-me {
+    display: flex;
+}
+  
+form .remember-me input {
+    margin-right: 5px;
+    accent-color: #b3b3b3;
+}
+  
+form .form-help :where(label, a) {
+    font-size: 0.9rem;
+}
+  
+.form-wrapper p a {
+    color: #fff;
+}
+  
+.form-wrapper small {
+    display: block;
+    margin-top: 15px;
+    color: #b3b3b3;
+}
+  
+.form-wrapper small a {
+    color: #0071eb;
+}
+  
+@media (max-width: 740px) {
+    body::before {
+      display: none;
+}
+  
+.form-wrapper {
+      width: 100%;
+      top: 43%;
+}
+  
+.form-wrapper form {
+      margin: 25px 0 40px;
+}
+}                                          
+
+.dotazy {
+    color: #fff;
+    position: absolute;
+    top: 120%;
+    left: 43%;
+}
+
+
