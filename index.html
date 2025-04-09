@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
+    <title>Registrace</title>
 </head>
 <body>
     <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
-        </div>
-
+        <p class="rgs">Registrace uživatele</p>
+        <form>
+            <input type="text" placeholder="Jméno">
+            <br> <input type="text" placeholder="Příjmení">
+            <br> <label class="dat" for="dob">Datum narození:</label>
+            <br> <input type="date" id="dob" name="dob">
+            <br> <input type="email" placeholder="E-mail">
+            <br> <input type="password" placeholder="Heslo">
+            <p id="password-message" style="color: red;"></p>
+            <div id="password-validation-message"></div>
+            <br> <input type="submit" value="Registrace">
+        </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
