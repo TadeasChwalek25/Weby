@@ -1,18 +1,74 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Město Rumburk</title>
+  <link rel="stylesheet" href="styly.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
-        </div>
+  <header>
+    <h1>Město Rumburk</h1>
+    <p>Brána Šluknovského výběžku</p>
+    <button onclick="toggleDarkMode()">Přepnout režim</button>
+  </header>
 
-    </div>
+  <nav>
+    <a href="#o-meste">O městě</a>
+    <a href="#historie">Historie</a>
+    <a href="#pamatky">Památky</a>
+    <a href="#skoly">Školy a podniky</a>
+    <a href="#fakty">Věděl jsi, že...</a>
+    <a href="#mapa">Mapa</a>
+  </nav>
+
+  <main>
+    <section id="o-meste">
+      <h2>O městě</h2>
+      <p>Rumburk se nachází v severních Čechách, v okrese Děčín, v blízkosti hranice s Německem.</p>
+    </section>
+
+    <section id="historie">
+      <h2>Historie</h2>
+      <p>První písemná zmínka o Rumburku pochází z roku 1298. V roce 1918 se zde odehrála známá Rumburská vzpoura.</p>
+    </section>
+
+    <section id="pamatky">
+      <h2>Významné památky</h2>
+      <ul>
+        <li>Loretánská kaple</li>
+        <li>Rozhledna Dymník</li>
+        <li>Klášter kapucínů</li>
+        <li>Městská radnice</li>
+      </ul>
+    </section>
+
+    <section id="skoly">
+      <h2>Školy a podniky</h2>
+      <p>Mezi významné školy patří Gymnázium Rumburk a SOŠ a SOU Rumburk. Najdeš tu i podniky jako Rumburské strojírny.</p>
+    </section>
+
+    <section id="fakty">
+      <h2>Věděl jsi, že...?</h2>
+      <ul class="facts">
+        <li>Rumburk má přezdívku „brána Šluknovského výběžku“.</li>
+        <li>V roce 1918 tu proběhla Rumburská vzpoura českých vojáků.</li>
+        <li>Nachází se zde jediná loretánská kaple v severních Čechách.</li>
+        <li>Rozhledna Dymník je postavená na vyhaslé sopce!</li>
+        <li>V Rumburku kdysi jezdila koňka, tedy koňmi tažená tramvaj.</li>
+      </ul>
+    </section>
+
+    <section id="mapa">
+      <h2>Mapa</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2465.374710582666!2d14.556762!3d50.952682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470907e2fc5de2b5%3A0x400af0f661525f0!2sRumburk!5e0!3m2!1scs!2scz!4v1714395581820" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p class="foter">&copy; 2025 Tadeáš | Web o Rumburku</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
