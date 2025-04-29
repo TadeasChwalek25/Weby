@@ -2,17 +2,24 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Počítadlo</title>
     <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
 </head>
-<body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
-        </div>
-
+<body class="light">
+    <div class="toggle-mode">
+        <label>
+            <input type="checkbox" id="modeToggle">
+            🌗 Přepnout režim
+        </label>
     </div>
+    <div class="container">
+        <h1 id="cislo">0</h1>
+        <div class="tlacitka">
+            <button onclick="zvys()">Zvýšit</button>
+            <button onclick="sniz()">Snížit</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
