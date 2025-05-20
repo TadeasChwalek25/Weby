@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Datart Shop</title>
+  <link rel="stylesheet" href="styly.css"/>
 </head>
 <body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
-        </div>
+  <header>
+    <h1>Datart Shop</h1>
+    <input type="text" id="search" placeholder="Hledat produkty...">
+    <div class="cart" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+      <nav id="category-nav">
+    <button onclick="filterCategory('Vše')">Vše</button>
+    <button onclick="filterCategory('Mobily')">Telefony</button>
+    <button onclick="filterCategory('TV')">TV</button>
+    <button onclick="filterCategory('Notebooky')">Notebooky</button>
+    <button onclick="filterCategory('Sluchátka')">Sluchátka</button>
+    <button onclick="filterCategory('Tablety')">Tablety</button>
+</nav>
 
+  </header>
+
+  <main>
+    <div id="products"></div>
+  </main>
+
+<aside id="cart-panel" class="hidden">
+  <h2>Košík <button onclick="toggleCart()">❌</button></h2>
+  <ul id="cart-items"></ul>
+  <p id="total">Celkem: 0 Kč</p>
+</aside>
+
+
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <h3 id="modal-name"></h3>
+      <p id="modal-desc"></p>
+      <p id="modal-price"></p>
+      <button onclick="closeModal()">Zavřít</button>
     </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
