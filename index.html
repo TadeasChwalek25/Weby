@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Platební brána</title>
+  <link rel="stylesheet" href="styly.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
-        </div>
+  <header>
+    <a target="_blank" href="prihlaseni.html" id="login-link">Přihlásit se</a>
+  </header>
 
+
+  <div class="payment-box">
+    <h2>Platební brána</h2>
+    <p>Celkem k úhradě: <strong>25 530 360 €</strong></p>
+
+    <div class="methods">
+      <label><input type="radio" name="method" value="card" checked> 💳 Karta</label>
+      <label><input type="radio" name="method" value="apple">  Apple Pay</label>
+      <label><input type="radio" name="method" value="google"> 🧾 Google Pay</label>
+      <label><input type="radio" name="method" value="cash"> 💵 Dobírka</label>
     </div>
+
+<form id="card-form" class="card-form">
+  <input type="text" id="card-name" placeholder="Jméno držitele karty" required />
+  <input type="text" id="card-number" placeholder="Číslo karty (16 číslic)" maxlength="19" required />
+  <div class="form-row">
+    <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required />
+    <input type="text" id="cvc" placeholder="CVC" maxlength="4" required />
+  </div>
+  <label class="remember">
+    <input type="checkbox" id="remember"> Zapamatovat si kartu
+  </label>
+</form>
+
+
+    <button id="pay-btn">Zaplatit</button>
+
+    <div id="payment-status" class="hidden">
+      <div class="loader" id="loader"></div>
+      <div class="checkmark hidden" id="success">
+        <div class="icon">✅</div>
+        <p>Platba proběhla úspěšně</p>
+      </div>
+      <div class="error hidden" id="error">
+        ❌ Platba se nezdařila<br />
+        <button id="retry-btn">Zkusit znovu</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="sound-success" src="success.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
 </body>
 </html>
