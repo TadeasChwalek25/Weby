@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toggle Background</title>
+  <link rel="stylesheet" href="styly.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
-        </div>
-
+  <div class="container">
+    <input type="checkbox" name="check" id="check" hidden />
+    <label for="check" class="toggle">
+      <div class="toggle__circle"></div>
+    </label>
+    <div class="toggle-text">
+      <span>N</span>
+      <span>FF</span>
     </div>
+  </div>
 </body>
 </html>
+            
