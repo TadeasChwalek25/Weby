@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herní Info Web</title>
+  <link rel="stylesheet" href="styly.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
-        </div>
-
+  <header>
+    <h1>🎮 Herní Info Web</h1>
+    <p>Objev nejpopulárnější hry světa</p>
+  </header>
+  
+  <input type="text" id="search" placeholder="Hledej hru...">
+  <div class="games-container">
+    <!-- ETS2 -->
+    <div class="game-card" onclick="toggleInfo('ets2')">
+      <img src="https://cdn.akamai.steamstatic.com/steam/apps/227300/header.jpg" alt="ETS2">
+      <h2>Euro Truck Simulator 2</h2>
+      <button>Více info</button>
+      <div class="game-info" id="ets2">
+        <p>Simulátor kamionové dopravy po Evropě. DLC: Iberia, Italia, Vive La France, . . .</p>
+      </div>
     </div>
+
+    <!-- Fortnite -->
+    <div class="game-card" onclick="toggleInfo('fortnite')">
+      <img src="https://i.wpimg.pl/1200x/d.wpimg.pl/2070930782--2069820268/fortnite.jpg" alt="Fortnite">
+      <h2>Fortnite</h2>
+      <button>Více info</button>
+      <div class="game-info" id="fortnite">
+        <p>Battle royale hra s kreslenou grafikou, možnost stavění, skiny, sezóny.</p>
+      </div>
+    </div>
+
+    <!-- Fall Guys -->
+    <div class="game-card" onclick="toggleInfo('fallguys')">
+      <img src="https://cdn.alza.cz/Foto/ImgGalery/Image/fall-guys.jpg" alt="Fall Guys">
+      <h2>Fall Guys</h2>
+      <button>Více info</button>
+      <div class="game-info" id="fallguys">
+        <p>Zábavná soutěžní hra pro více hráčů s překážkovými dráhami.</p>
+      </div>
+    </div>
+
+    <!-- Mafia -->
+    <div class="game-card" onclick="toggleInfo('mafia')">
+      <img src="https://assets1.ignimgs.com/thumbs/userUploaded/2020/9/24/mafia-1280-1600924191554.jpg" alt="Mafia">
+      <h2>Mafia: Definitive Edition</h2>
+      <button>Více info</button>
+      <div class="game-info" id="mafia">
+        <p>Remake slavné české gangsterské hry z třicátých let v USA.</p>
+      </div>
+    </div>
+
+    <!-- Minecraft -->
+    <div class="game-card" onclick="toggleInfo('minecraft')">
+      <img src="https://i.ytimg.com/vi_webp/ztNoBI0m_P0/maxresdefault.webp" alt="Minecraft">
+      <h2>Minecraft</h2>
+      <button>Více info</button>
+      <div class="game-info" id="minecraft">
+        <p>Sandboxová hra, kde můžeš tvořit, stavět, přežívat i bojovat.</p>
+      </div>
+    </div>
+
+    <!-- GTA V -->
+    <div class="game-card" onclick="toggleInfo('gtav')">
+      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="GTA V">
+      <h2>Grand Theft Auto V</h2>
+      <button>Více info</button>
+      <div class="game-info" id="gtav">
+        <p>Akční open-world hra s příběhem tří postav a rozsáhlým online režimem.</p>
+      </div>
+    </div>
+  
+    <div class="game-card" onclick="toggleInfo('warzone')">
+      <img src="https://image.api.playstation.com/vulcan/ap/rnd/202503/2819/346190abf755e3883d1353fbc8d8ccb7e1acf076f1138d6b.jpg" alt="Warzone">
+      <h2>Call of Duty: Warzone</h2>
+      <button>Více info</button>
+      <div class="game-info" id="warzone">
+        <p>Moderní battle royale střílečka s realistickou grafikou a taktickým gameplayem.</p>
+      </div>
+    </div>
+
+    <!-- Rocket League -->
+    <div class="game-card" onclick="toggleInfo('rocketleague')">
+      <img src="https://britishesports.org/wp-content/uploads/rocket-league-switch-hero.jpg" alt="Rocket League">
+      <h2>Rocket League</h2>
+      <button>Více info</button>
+      <div class="game-info" id="rocketleague">
+        <p>Futuristický fotbal s autíčky. Rychlá akce, multiplayer, turnaje.</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
