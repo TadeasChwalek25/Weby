@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
+  <meta charset="UTF-8" />
+  <title>Odpočet do roku 2026</title>
+  <link rel="stylesheet" href="styly.css" type="text/css" />
 </head>
 <body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
-        </div>
+  <canvas id="fireworks"></canvas>
 
+  <div class="container" id="content">
+    <h1>Odpočet do roku 2026</h1>
+    <div class="countdown">
+      <div class="time-box">
+        <div class="number" id="days">0</div>
+        <div class="label">Dní</div>
+      </div>
+      <div class="time-box">
+        <div class="number" id="hours">0</div>
+        <div class="label">Hodin</div>
+      </div>
+      <div class="time-box">
+        <div class="number" id="minutes">0</div>
+        <div class="label">Minut</div>
+      </div>
+      <div class="time-box">
+        <div class="number" id="seconds">0</div>
+        <div class="label">Sekund</div>
+      </div>
     </div>
+    <footer>&copy; 2025 – Nový rok se blíží!</footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
