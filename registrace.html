@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registrace – Look&Feel</title>
+  <link rel="stylesheet" href="styly.css" type="text/css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">👗 Look&Feel</div>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Domů</a></li>
+      <li><a href="registrace.html" class="active">Registrace</a></li>
+      <li><a href="onas.html">O nás</a></li>
+      <li><a href="kontakt.html">Kontakty</a></li>
+    </ul>
+    <div class="burger" id="burger-menu">☰</div>
+  </nav>
+</header>
+
+<main class="register-section">
+  <h1>Vytvořte si účet</h1>
+  <p>Registrujte se a získejte přístup k exkluzivním nabídkám a novinkám.</p>
+
+  <form class="register-form">
+    <label for="name">👤 Jméno a příjmení</label>
+    <input type="text" id="name" name="name" placeholder="Vaše celé jméno" required />
+
+    <label for="email">📧 E-mail</label>
+    <input type="email" id="email" name="email" placeholder="např. vase@email.cz" required />
+
+    <label for="password">🔒 Heslo</label>
+    <input type="password" id="password" name="password" placeholder="Zadejte heslo" required />
+
+    <label for="confirm-password">🔒 Potvrzení hesla</label>
+    <input type="password" id="confirm-password" name="confirm-password" placeholder="Zadejte heslo znovu" required />
+
+    <button type="submit" class="button-primary">Registrovat se</button>
+  </form>
+</main>
+
+<footer>
+  <p>© 2025 Look&Feel</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
