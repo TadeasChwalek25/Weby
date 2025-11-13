@@ -2,17 +2,34 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Jednoduchá hra Lodě PvE">
+    <meta name="keywords" content="lodě, hra, PvE, bitevní lodě, HTML, CSS, JavaScript">
+    <meta name="author" content="Tvé jméno">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
+    <title>Lodě PvE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
-        </div>
+    <header>
+        <h1>Lodě PvE</h1>
+    </header>
 
-    </div>
+    <nav>
+        <button id="novaHra">Nová hra</button>
+        <button id="nacistHru">Načíst hru</button>
+        <button id="vysledky">Výsledky</button>
+    </nav>
+
+    <main>
+        <section id="herniPole">
+            <!-- Herní pole se vytvoří pomocí JavaScriptu -->
+        </section>
+
+        <div id="tahy">
+            Počet tahů: <span id="pocetTahu">0</span>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
