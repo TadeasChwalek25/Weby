@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.clock {
+    width: 350px;
+    height: 350px;
+    background: #1f1f1f;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8), inset 0 0 20px rgba(255,255,255,0.05);
+    border: 10px solid #282828;
+}
+
+/* Styl pro datum */
+.date-display {
+    position: absolute;
+    top: 80px; /* Umístění nad středem */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff4757; /* Červená barva ladící s vteřinovkou */
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    border-radius: 20px;
+    transform: translateX(-50%);
+}
+
+.hour { width: 8px; height: 70px; background: #ffffff; z-index: 3; }
+.minute { width: 5px; height: 110px; background: #b3b3b3; z-index: 2; }
+.second { width: 2px; height: 130px; background: #ff4757; z-index: 4; }
+
+.number {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(calc(var(--i) * 30deg));
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #888;
+}
+
+.number span {
+    display: inline-block;
+    transform: rotate(calc(var(--i) * -30deg));
+}
