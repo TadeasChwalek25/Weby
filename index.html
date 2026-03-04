@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styly.css" type="text/css">
-    <title>Slunce s planetou</title>
+    <title>Neon Slot Machine</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sun"></div>
-        <div class="earth">
-            <div class="moon"></div>
+
+    <div class="glass-container">
+        <h1>Lucky <span>Slots</span></h1>
+        
+        <div class="slots-container">
+            <div id="slot1" class="slot">0</div>
+            <div id="slot2" class="slot">0</div>
+            <div id="slot3" class="slot">0</div>
         </div>
 
+        <button id="actionBtn">HRA</button>
     </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-text"></h2>
+            <button onclick="closeModal()">Zkusit znovu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
