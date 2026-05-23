@@ -1,0 +1,213 @@
+html, body {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+header h1 {
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+}
+
+header {
+    background: black;
+    
+}
+
+.horizon {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    
+}
+
+.horizon1 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.horizon2 {
+    display: block;
+    margin: 0px auto;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 15px;
+}
+
+.nosferatu {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+.nosferatu1 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nosferatu2 {
+    display: block;
+    margin: 0px auto;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 15px;
+}
+
+.opice {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+.opice1 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.opice2 {
+    display: block;
+    margin: 0px auto;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 15px;
+}
+
+.Gladiator2 {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+.Gladiator21 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Gladiator22 {
+    display: block;
+    margin: 0px auto;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 15px;
+}
+
+.Tiché_místo {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+.Tiché_místo1 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.Tiché_místo2 {
+    display: block;
+    margin: 0px auto;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 15px;
+}
+
+.Alien {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+.Alien1 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.Alien2 {
+    display: block;
+    margin: 0px auto;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 15px;
+}
+
+.Deadpool {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+.Deadpool1 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.Deadpool2 {
+    display: block;
+    margin: 0px auto;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 15px;
+}
+
+.Joker {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+.Joker1 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.Joker2 {
+    display: block;
+    margin: 0px auto;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 15px;
+}
+
+.Furiosa {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+.Furiosa1 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}    
+.Furiosa2 {
+    display: block;
+    margin: 0px auto;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 15px;
+}
+
+.Duna {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+.Duna1 {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.Duna2 {
+    display: block;
+    margin: 0px auto;
+    box-shadow: 7px 7px 7px black;
+    border-radius: 15px;
+}
+
+
+
+
+
+
